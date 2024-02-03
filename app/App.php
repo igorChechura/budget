@@ -19,7 +19,7 @@ function getTransactionFiles(string $dirPath): array
 
 function getTransactions(string $fileName): array
 {
-    if(! file_exists($fileName)) {
+    if (!file_exists($fileName)) {
         trigger_error('File "' . $fileName . '" does not exist.', E_USER_ERROR);
     }
 
